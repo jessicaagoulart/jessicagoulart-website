@@ -26,30 +26,39 @@ import Carousel from "@/components/Carousel";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { Formik } from "formik";
-import { FormEvent, useRef } from "react";
+import React from "react";
 
 export default function Home() {
-	const form = useRef();
+	const form = React.useRef<HTMLFormElement>(null);
 
-	const onSubmit = (e: FormEvent) => {
+	const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 
+		const target = e.target as typeof e.target & {
+			name: { value: string };
+			email: { value: string };
+			message: { value: string };
+		};
+
 		const templateParams = {
-			from_name: e.target.name.value,
-			email: e.target.email.value,
-			message: e.target.message.value,
+			from_name: target.name.value,
+			email: target.email.value,
+			message: target.message.value,
 		};
 
 		emailjs
 			.send(
-				process.env.REACT_APP_SERVICE_ID,
-				process.env.REACT_APP_TEMPLATE_ID,
+				process.env.REACT_APP_SERVICE_ID!,
+				process.env.REACT_APP_TEMPLATE_ID!,
 				templateParams,
-				process.env.REACT_APP_USER_ID
+				process.env.REACT_APP_USER_ID!
 			)
+			.then((result) => {
+				console.log(result.text);
+			})
 			.then(
 				() => {
-					form.current.reset();
+					form?.current?.reset();
 				},
 				(error) => {
 					console.log(error.text);
@@ -220,8 +229,15 @@ export default function Home() {
 					Gostou do meu perfil? Entre em contato comigo pelo formulário abaixo!
 				</h3>
 
-				<Formik initialValues={{ name: "", email: "", message: "" }}>
-					{({ handleChange, isSubmitting }) => (
+				<Formik
+					initialValues={{
+						name: "",
+						email: "",
+						message: "",
+					}}
+					onSubmit={onSubmit}
+				>
+					{({ handleChange }) => (
 						<form ref={form} onSubmit={onSubmit}>
 							<label htmlFor="name">Nome</label>
 							<input type="text" name="name" onChange={handleChange} />
@@ -232,16 +248,7 @@ export default function Home() {
 							<label htmlFor="message">Mensagem</label>
 							<textarea name="message" onChange={handleChange} />
 
-							<button
-								type="submit"
-								disabled={
-									!form.current?.name.value ||
-									!form.current?.email.value ||
-									!form.current?.message.value
-								}
-							>
-								Enviar
-							</button>
+							<button type="submit">Enviar</button>
 						</form>
 					)}
 				</Formik>
