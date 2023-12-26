@@ -26,12 +26,12 @@ import Carousel from "@/components/Carousel";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { Formik } from "formik";
-import { useRef } from "react";
+import { FormEvent, useRef } from "react";
 
 export default function Home() {
 	const form = useRef();
 
-	const onSubmit = (e: any) => {
+	const onSubmit = (e: FormEvent) => {
 		e.preventDefault();
 
 		const templateParams = {
