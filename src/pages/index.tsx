@@ -31,7 +31,7 @@ import { useRef } from "react";
 export default function Home() {
 	const form = useRef();
 
-	const onSubmit = (e) => {
+	const onSubmit = (e: any) => {
 		e.preventDefault();
 
 		const templateParams = {
