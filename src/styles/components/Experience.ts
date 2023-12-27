@@ -68,4 +68,8 @@ export const TableExperienceContainer = styled("div", {
 			margin: "1rem 0",
 		},
 	},
+
+	"@media (max-width: 1080px)": {
+		width: "90%",
+	},
 });

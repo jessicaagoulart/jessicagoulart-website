@@ -12,7 +12,7 @@ export default function Navbar() {
 				</li>
 				<li>
 					<Link className="link" href="#about">
-						Sobre mim
+						Sobre
 					</Link>
 				</li>
 				<li>

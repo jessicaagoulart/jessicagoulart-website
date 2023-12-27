@@ -17,6 +17,22 @@ export const AboutTextContainer = styled("div", {
 		color: "$purple500",
 		textAlign: "center",
 	},
+
+	height: "0px",
+	padding: 0,
+	position: "absolute",
+	left: "35%",
+
+	"@media only screen and (max-width: 1080px)": {
+		position: "relative",
+		height: "100%",
+		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
+		left: "0%",
+		right: "0%",
+		textAlign: "center",
+	},
 });
 
 export const AboutContainer = styled("main", {
@@ -51,7 +67,6 @@ export const AboutContainer = styled("main", {
 	},
 
 	paddingTop: "2rem",
-
 	alignItems: "center",
 
 	p: {
@@ -59,29 +74,19 @@ export const AboutContainer = styled("main", {
 		maxWidth: 800,
 	},
 
-	".img-container:hover": {
-		cursor: "pointer",
-	},
-
 	".img": {
 		transition: "all 1s ease-in-out",
-	},
-
-	".img-container": {
-		transition: "all 1s ease-in-out",
-		left: "35%",
 	},
 
 	".img:hover": {
 		transform: "scale(1.1)",
 	},
 
-	".text-container": {
-		height: "0px",
-		padding: 0,
-		transition: "all 1s ease-in-out",
-		position: "absolute",
-		left: "35%",
+	"@media (max-width: 1080px)": {
+		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
+		height: "100%",
 	},
 });
 
@@ -107,6 +112,17 @@ export const AboutImgContainer = styled("div", {
 		zIndex: 2,
 		bottom: 40,
 		right: 80,
+	},
+
+	transition: "all 1s ease-in-out",
+	left: "35%",
+
+	"&:hover": {
+		cursor: "pointer",
+	},
+
+	"@media only screen and (max-width: 1080px)": {
+		display: "none",
 	},
 });
 

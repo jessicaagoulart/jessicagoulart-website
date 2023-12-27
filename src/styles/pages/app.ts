@@ -48,4 +48,8 @@ export const Main = styled("main", {
 	paddingTop: "2rem",
 	width: "100%",
 	height: "100%",
+
+	"@media (max-width: 1080px)": {
+		paddingTop: "0rem",
+	},
 });

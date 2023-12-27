@@ -7,6 +7,12 @@ export const Container = styled("div", {
 	flexWrap: "wrap",
 	width: "1080px",
 
+	"@media (max-width: 1080px)": {
+		width: "100%",
+		alignItems: "center",
+		justifyContent: "center",
+	},
+
 	".wrapper": {
 		position: "relative",
 		display: "flex",

@@ -26,11 +26,18 @@ export const ContactContainer = styled("main", {
 		fontWeight: 500,
 	},
 
+	"@media (max-width: 1080px)": {
+		form: {
+			width: "300px !important",
+		},
+	},
+
 	form: {
 		display: "flex",
 		flexDirection: "column",
 		alignItems: "center",
 		justifyContent: "center",
+		width: "600px",
 
 		label: {
 			fontSize: "1rem",
@@ -47,7 +54,7 @@ export const ContactContainer = styled("main", {
 			border: "1px solid $purple300",
 			backgroundColor: "$purple100",
 			borderRadius: 10,
-			width: "600px",
+			width: "100%",
 		},
 
 		"input:focus": {
@@ -60,7 +67,7 @@ export const ContactContainer = styled("main", {
 			border: "1px solid $purple300",
 			backgroundColor: "$purple100",
 			borderRadius: 10,
-			width: "600px",
+			width: "100%",
 		},
 
 		"textarea:focus": {

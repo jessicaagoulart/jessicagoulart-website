@@ -1,5 +1,5 @@
 import React from "react";
-import { ContactContainer } from "@/styles/pages";
+import { ContactContainer } from "@/styles/components/Contact";
 import emailjs from "@emailjs/browser";
 
 export default function Contact() {

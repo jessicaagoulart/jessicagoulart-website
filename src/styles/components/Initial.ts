@@ -19,6 +19,8 @@ export const HomeContainer = styled("main", {
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
+
+		paddingTop: "0rem",
 	},
 });
 
@@ -53,9 +55,18 @@ export const TextContainer = styled("div", {
 		justifyContent: "center",
 		alignItems: "center",
 
+		p: {
+			textAlign: "center",
+		},
+
 		h1: {
 			fontSize: "4rem",
 			lineHeight: "4rem",
+			textAlign: "center",
+		},
+
+		h2: {
+			fontSize: "1.5rem",
 		},
 	},
 });
