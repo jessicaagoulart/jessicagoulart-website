@@ -33,6 +33,13 @@ export const Header = styled("header", {
 		top: 10,
 		left: 50,
 	},
+
+	"@media (max-width: 1080px)": {
+		justifyContent: "center",
+		".logo": {
+			display: "none",
+		},
+	},
 });
 
 export const Main = styled("main", {
