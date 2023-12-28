@@ -39,6 +39,12 @@ export const Header = styled("header", {
 		fontSize: "2rem",
 		fontWeight: "400",
 	},
+
+	"@media (max-width: 500px)": {
+		".logo": {
+			display: "none",
+		},
+	},
 });
 
 export const Main = styled("main", {

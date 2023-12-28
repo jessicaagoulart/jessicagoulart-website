@@ -1,11 +1,9 @@
 import { NavbarContainer, Wrapper } from "@/styles/components/Navbar";
-import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Navbar() {
 	return (
 		<Wrapper>
-			<FaBars className="navbar-icon" />
 			<NavbarContainer className="navbar-container">
 				<li>
 					<Link className="link" href="#start">

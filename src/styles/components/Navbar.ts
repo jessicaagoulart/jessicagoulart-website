@@ -2,50 +2,6 @@ import { styled } from "..";
 
 export const Wrapper = styled("div", {
 	display: "flex",
-
-	"@media (min-width: 500px)": {
-		".navbar-icon": {
-			display: "none",
-		},
-	},
-
-	"@media (max-width: 500px)": {
-		".navbar-icon": {
-			display: "flex",
-		},
-
-		".navbar-icon:hover": {
-			cursor: "pointer",
-		},
-
-		".navbar-icon:hover + ul": {
-			width: "200px",
-			height: "100%",
-			opacity: "1",
-			transform: "translateX(0)",
-		},
-
-		ul: {
-			position: "fixed",
-			display: "flex",
-			flexDirection: "column",
-			alignItems: "flex-start",
-			justifyContent: "center",
-			top: "0",
-			right: "0",
-			bottom: "0",
-			width: "0",
-			height: "0%",
-			opacity: "0",
-			backgroundColor: "$darkblue",
-			transition: "all 0.3s ease-in-out 0s",
-			transform: "translateX(-100%)",
-
-			li: {
-				padding: "1rem",
-			},
-		},
-	},
 });
 
 export const NavbarContainer = styled("ul", {
@@ -89,6 +45,18 @@ export const NavbarContainer = styled("ul", {
 		visibility: "visible",
 		"-webkit-transform": "scaleX(1)",
 		transform: "scaleX(1)",
+	},
+
+	"@media (max-width: 500px)": {
+		marginLeft: "0rem",
+		padding: "0rem",
+
+		alignItems: "center",
+		justifyContent: "center",
+
+		li: {
+			fontSize: "0.6rem",
+		},
 	},
 });
 
