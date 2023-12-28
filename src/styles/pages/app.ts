@@ -28,17 +28,16 @@ export const Header = styled("header", {
 
 	zIndex: 1000,
 
-	".logo": {
-		position: "absolute",
-		top: 10,
-		left: 50,
+	a: {
+		fontStyle: "none",
+		textDecoration: "none",
+		color: "$gray100",
 	},
 
-	"@media (max-width: 1080px)": {
-		justifyContent: "center",
-		".logo": {
-			display: "none",
-		},
+	".logo": {
+		paddingLeft: "2rem",
+		fontSize: "2rem",
+		fontWeight: "400",
 	},
 });
 

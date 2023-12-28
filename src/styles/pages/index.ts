@@ -45,7 +45,7 @@ export const SkillsContainer = styled("main", {
 export const FloatingButton = styled("div", {
 	position: "fixed",
 	bottom: 15,
-	right: 40,
+	right: 15,
 	zIndex: 2,
 
 	width: 40,
@@ -72,5 +72,9 @@ export const FloatingButton = styled("div", {
 	"&:hover": {
 		cursor: "pointer",
 		filter: "brightness(50%)",
+	},
+
+	"@media only screen and (max-width: 500px)": {
+		right: 20,
 	},
 });

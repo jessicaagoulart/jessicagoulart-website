@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<Container>
 			<Header>
 				<Link href="/">
-					<Image className="logo" src={logoImg} alt="Raposa" width={80} />
+					<div className="logo">JG</div>
 				</Link>
 
 				<Navbar />

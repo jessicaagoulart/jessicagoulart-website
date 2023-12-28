@@ -9,6 +9,11 @@ export const FooterContainer = styled("footer", {
 	maxWidth: "1400px",
 	padding: "1rem 2rem",
 	width: "100%",
+
+	"@media only screen and (max-width: 500px)": {
+		padding: "1rem 0rem",
+		alignItems: "center",
+	},
 });
 
 export const IconsContainer = styled("div", {
@@ -28,5 +33,12 @@ export const IconsContainer = styled("div", {
 		"&:hover": {
 			transform: "scale(1.1)",
 		},
+	},
+
+	"@media only screen and (max-width: 500px)": {
+		svg: {
+			marginLeft: "0.5rem",
+		},
+		width: "25%",
 	},
 });

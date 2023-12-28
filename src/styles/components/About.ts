@@ -32,6 +32,12 @@ export const AboutTextContainer = styled("div", {
 		left: "0%",
 		right: "0%",
 		textAlign: "center",
+		overflow: "visible",
+	},
+
+	"@media only screen and (max-width: 500px)": {
+		margin: 0,
+		padding: "1rem",
 	},
 });
 
@@ -40,7 +46,10 @@ export const AboutContainer = styled("main", {
 	display: "flex",
 	justifyContent: "center",
 	width: "100%",
-	height: "420px",
+
+	height: "500px",
+
+	padding: "2rem",
 
 	transition: "all 1s ease-in-out",
 
@@ -48,8 +57,9 @@ export const AboutContainer = styled("main", {
 		".img-container": {
 			left: "10%",
 		},
+
 		".text-container": {
-			height: "350px",
+			height: "500px",
 			padding: "1rem 2rem",
 		},
 	},
@@ -86,7 +96,15 @@ export const AboutContainer = styled("main", {
 		flexDirection: "column",
 		justifyContent: "center",
 		alignItems: "center",
-		height: "100%",
+		height: "700px",
+		padding: "1rem",
+	},
+
+	"@media (max-width: 500px)": {
+		flexDirection: "column",
+		justifyContent: "center",
+		alignItems: "center",
+		height: "800px",
 	},
 });
 
@@ -115,7 +133,7 @@ export const AboutImgContainer = styled("div", {
 	},
 
 	transition: "all 1s ease-in-out",
-	left: "35%",
+	left: "38%",
 
 	"&:hover": {
 		cursor: "pointer",
@@ -158,4 +176,8 @@ export const ImagePulse = styled("div", {
 	zIndex: 0,
 
 	animation: `${pulse} 1.2s infinite`,
+
+	"@media only screen and (max-width: 1080px)": {
+		display: "none",
+	},
 });

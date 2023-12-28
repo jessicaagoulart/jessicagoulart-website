@@ -1,5 +1,53 @@
 import { styled } from "..";
 
+export const Wrapper = styled("div", {
+	display: "flex",
+
+	"@media (min-width: 500px)": {
+		".navbar-icon": {
+			display: "none",
+		},
+	},
+
+	"@media (max-width: 500px)": {
+		".navbar-icon": {
+			display: "flex",
+		},
+
+		".navbar-icon:hover": {
+			cursor: "pointer",
+		},
+
+		".navbar-icon:hover + ul": {
+			width: "200px",
+			height: "100%",
+			opacity: "1",
+			transform: "translateX(0)",
+		},
+
+		ul: {
+			position: "fixed",
+			display: "flex",
+			flexDirection: "column",
+			alignItems: "flex-start",
+			justifyContent: "center",
+			top: "0",
+			right: "0",
+			bottom: "0",
+			width: "0",
+			height: "0%",
+			opacity: "0",
+			backgroundColor: "$darkblue",
+			transition: "all 0.3s ease-in-out 0s",
+			transform: "translateX(-100%)",
+
+			li: {
+				padding: "1rem",
+			},
+		},
+	},
+});
+
 export const NavbarContainer = styled("ul", {
 	display: "flex",
 	justifyContent: "space-between",
@@ -41,25 +89,6 @@ export const NavbarContainer = styled("ul", {
 		visibility: "visible",
 		"-webkit-transform": "scaleX(1)",
 		transform: "scaleX(1)",
-	},
-
-	".button": {
-		backgroundColor: "transparent",
-		border: "1px solid $purple300",
-		cursor: "pointer",
-		fontWeight: 400,
-		fontSize: "1rem",
-		transition: "all 0.2s ease-in-out",
-		"&:hover": {
-			transform: "scale(1.1)",
-		},
-
-		marginLeft: "2rem",
-
-		padding: "0.5rem 1rem",
-		borderRadius: "2rem",
-
-		color: "$white",
 	},
 });
 

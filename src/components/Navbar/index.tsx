@@ -1,10 +1,12 @@
-import { NavbarContainer } from "@/styles/components/Navbar";
+import { NavbarContainer, Wrapper } from "@/styles/components/Navbar";
+import { FaBars } from "react-icons/fa";
 import Link from "next/link";
 
 export default function Navbar() {
 	return (
-		<div>
-			<NavbarContainer>
+		<Wrapper>
+			<FaBars className="navbar-icon" />
+			<NavbarContainer className="navbar-container">
 				<li>
 					<Link className="link" href="#start">
 						Início
@@ -31,6 +33,6 @@ export default function Navbar() {
 					</Link>
 				</li>
 			</NavbarContainer>
-		</div>
+		</Wrapper>
 	);
 }
