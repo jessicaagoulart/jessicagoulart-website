@@ -53,14 +53,16 @@ export const AboutContainer = styled("main", {
 
 	transition: "all 1s ease-in-out",
 
-	"&:hover": {
-		".img-container": {
-			left: "10%",
-		},
+	"@media (min-width: 501px)": {
+		"&:hover": {
+			".img-container": {
+				left: "10%",
+			},
 
-		".text-container": {
-			height: "500px",
-			padding: "1rem 2rem",
+			".text-container": {
+				height: "500px",
+				padding: "1rem 2rem",
+			},
 		},
 	},
 

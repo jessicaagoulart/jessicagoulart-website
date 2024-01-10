@@ -22,8 +22,8 @@ export const ContactContainer = styled("main", {
 		fontSize: "1rem",
 		color: "$purple500",
 		textAlign: "center",
-		marginBottom: "2rem",
 		fontWeight: 500,
+		padding: "0rem 1rem 1rem",
 	},
 
 	"@media (max-width: 1080px)": {

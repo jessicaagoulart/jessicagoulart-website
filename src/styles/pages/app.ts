@@ -44,6 +44,8 @@ export const Header = styled("header", {
 		".logo": {
 			display: "none",
 		},
+
+		justifyContent: "center",
 	},
 });
 

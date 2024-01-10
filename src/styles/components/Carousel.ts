@@ -62,7 +62,8 @@ export const Container = styled("div", {
 });
 
 export const Title = styled("h2", {
-	fontSize: "1.5rem !important",
+	fontSize: "1.3rem !important",
 	fontWeight: 500,
 	marginBottom: "1rem",
+	marginTop: "0.5rem",
 });
