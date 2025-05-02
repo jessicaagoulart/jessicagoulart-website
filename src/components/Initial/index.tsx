@@ -13,18 +13,23 @@ export default function Initial() {
 			<TextContainer>
 				<h1>Jéssica Goulart.</h1>
 
-				<h2>Frontend Developer</h2>
+				<h2>Frontend Software Developer</h2>
 
 				<p>
-					Hey, tudo bem? 😊
+					Hi there! 😊
 					<br />
 					<br />
-					Sou uma apaixonada por Front-end e praticamente respiro ReactJS há
-					três anos! 🚀
+					I&apos;m Jéssica Goulart, a Frontend Software Developer deeply
+					passionate about building beautiful and functional user interfaces.
+					For over 3 years, I&apos;ve been immersed in the React.js ecosystem —
+					and I absolutely love it! 🚀
 					<br />
 					<br />
-					Estou trilhando minha jornada na Engenharia da Computação na PUC Minas
-					enquanto transformo linhas de código em verdadeira arte digital. 💻✨
+					I&apos;m currently pursuing a degree in Computer Science while turning
+					lines of code into meaningful digital experiences. 💻✨
+					<br />
+					<br />
+					Let&apos;s create something amazing together!
 				</p>
 			</TextContainer>
 
