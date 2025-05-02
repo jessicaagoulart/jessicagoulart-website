@@ -20,28 +20,31 @@ export default function About() {
 				<ImagePulse />
 			</AboutImgContainer>
 			<AboutTextContainer className="text-container">
-				<h1>Sobre mim.</h1>
+				<h1>About me.</h1>
 
 				<p>
-					🌟💻Tenho 26 anos e uma trajetória singular, partindo da medicina em
-					transição de carreira e navegando rumo à Engenharia da Computação.
+					🌟💻 I&apos;m 27 years old and have followed a unique path —
+					transitioning from medical school into the exciting world of Computer
+					Science.
 					<br />
 					<br />
-					👨‍💻🔬 Essa jornada despertou minha paixão pela tecnologia. Atualmente
-					no segundo ano do curso, mergulho nas complexidades do desenvolvimento
-					web. Minha incursão no mundo digital foi marcada pelo fascínio por
-					ReactJS.
+					👨‍💻🔬 This journey sparked my passion for technology. Now in my fourth
+					year of the program, I&apos;ve been diving deep into the complexities
+					of web development, where React.js first captured my interest.
 					<br />
 					<br />
-					🚀🖥️ Transformei meu interesse em habilidades concretas, desenvolvendo
-					interfaces envolventes e funcionais. Desde então, cada linha de código
-					é uma oportunidade para criar soluções intuitivas e impactantes. Em
-					busca de desafios que estimulem a criatividade e impulsionem a
-					inovação, almejo contribuir para projetos que redefinam experiências
-					online.
+					🚀🖥️ What began as curiosity has grown into a solid set of skills. I
+					focus on building engaging, functional interfaces that deliver
+					intuitive and impactful user experiences. Every line of code is an
+					opportunity to solve real problems and bring ideas to life.
 					<br />
 					<br />
-					💡🌐 Juntos, podemos construir uma jornada digital memorável. 🤝✨
+					💡🌐 I&apos;m driven by challenges that fuel creativity and
+					innovation, and I&apos;m eager to contribute to projects that shape
+					the future of digital experiences.
+					<br />
+					<br />
+					🤝✨ Let&apos;s build something memorable together.
 				</p>
 			</AboutTextContainer>
 		</AboutContainer>

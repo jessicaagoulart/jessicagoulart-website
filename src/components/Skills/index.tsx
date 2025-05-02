@@ -4,7 +4,7 @@ import Carousel from "../Carousel";
 export default function Skills() {
 	return (
 		<SkillsContainer id="skills" className="anchor">
-			<h2>Minhas skills</h2>
+			<h2>My skills</h2>
 
 			<Carousel />
 		</SkillsContainer>

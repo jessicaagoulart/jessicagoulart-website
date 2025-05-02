@@ -6,68 +6,68 @@ import {
 export default function Experience() {
 	return (
 		<ExperienceContainer id="experience" className="anchor">
-			<h2>Minha experiência</h2>
+			<h2>My experience</h2>
 			<TableExperienceContainer>
 				<div className="title">
-					Experiência 1 (Estágio de Trainee na Compasso UOL):
+					Experience 1 (Trainee Internship at Compasso UOL):
 				</div>
 				<div className="table">
 					<div className="row">
-						<p>• Maio de 2021 a Agosto de 2021.</p>
+						<p>• May 2021 to August 2021.</p>
 						<p>
-							• Estágio de 3 meses desenvolvendo uma plataforma de filmes
-							inspirada na Netflix.
+							• 3-month internship developing a movie platform inspired by
+							Netflix.
 						</p>
 
 						<p>
-							• Projeto em React JS utilizando principais ferramentas como
-							Redux, Axios e Styled-Components.
+							• Project built using React.js with tools such as Redux, Axios,
+							and Styled-Components.
 						</p>
 					</div>
 				</div>
 			</TableExperienceContainer>
 			<TableExperienceContainer>
 				<div className="title">
-					Experiência 2 (Desenvolvedora React JS Junior na Compasso UOL):
+					Experience 2 (Junior React.js Developer at Compasso UOL):
 				</div>
 				<div className="table">
 					<div className="row">
-						<p>• Agosto de 2021 a Março de 2022.</p>
+						<p>• August 2021 to March 2022.</p>
 
 						<p>
-							• Trabalho com React Native no suporte de um aplicativo para
-							cliente varejista.
+							• Worked with React Native supporting and evolving a retail
+							client’s mobile app.
 						</p>
 						<p>
-							• Utilização de tecnologias como Redux, Styled-Components, Axios e
-							Testing Library.
+							• Technologies used: Redux, Styled-Components, Axios, and Testing
+							Library.
 						</p>
 						<p>
-							• Correção de bugs, implementação de novas telas e
-							funcionalidades.
+							• Responsible for bug fixing, implementing new screens, and adding
+							new features.
 						</p>
 					</div>
 				</div>
 			</TableExperienceContainer>
 			<TableExperienceContainer>
 				<div className="title">
-					Experiência 3 (Desenvolvedora Junior a Pleno na Ioasys):
+					Experience 3 (Frontend Software Developer at Ioasys):
 				</div>
 				<div className="table">
 					<div className="row">
-						<p>• Março de 2022 até hoje.</p>
+						<p>• March 2022 to Present.</p>
+						<p>• Web development with React.js for a B2B logistics client.</p>
 						<p>
-							• Atuação em React JS no desenvolvimento web para cliente na área
-							de logística.
+							• Implemented features, complex forms, charts, and interactive
+							reports.
 						</p>
 						<p>
-							• Implementação de novas telas, funcionalidades, manipulação de
-							formulários complexos, relatórios e gráficos.
+							• Worked with modern technologies such as Next.js, Vite, and
+							Tailwind CSS.
 						</p>
-
 						<p>
-							• Utilização das principais tecnologias do React para essas
-							atividades.
+							• Collaborated in Agile teams with continuous delivery, code
+							reviews, and REST API integration.
 						</p>
 					</div>
 				</div>
