@@ -17,7 +17,7 @@ export default function Home() {
 			<FloatingButton>
 				<Link
 					className="button"
-					href="https://wa.me/31971673786?text=Olá, Jéssica!"
+					href="https://wa.me/31971673786?text=Hello, Jéssica!"
 					target="_blank"
 				>
 					<FaWhatsapp />
