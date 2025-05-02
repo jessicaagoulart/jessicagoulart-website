@@ -69,6 +69,12 @@ export const FloatingButton = styled("div", {
 
 	transition: "all 500ms ease-in-out",
 
+	a: {
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+	},
+
 	"&:hover": {
 		cursor: "pointer",
 		filter: "brightness(50%)",
