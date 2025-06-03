@@ -8,6 +8,7 @@ import IconStyledComponents from "../../assets/styled-components.png";
 import IconHtml from "../../assets/html.svg";
 import IconCss from "../../assets/css.svg";
 import IconGit from "../../assets/git.svg";
+import IconTypescript from "../../assets/typescript.svg";
 
 import Image from "next/image";
 import { Container, Title } from "@/styles/components/Carousel";
@@ -32,6 +33,41 @@ export default function Carousel() {
 					/>
 					<div className="percent">90%</div>
 					<Title>Javascript</Title>
+				</div>
+			</div>
+
+			<div className="wrapper">
+				<div className="item">
+					<Image
+						className="image"
+						style={{ padding: "11px" }}
+						src={IconTypescript}
+						alt="Typescript"
+						width={100}
+					/>
+					<div className="percent">80%</div>
+					<Title>Typescript</Title>
+				</div>
+			</div>
+
+			<div className="wrapper">
+				<div className="item">
+					<Image className="image" src={IconNext} alt="NextJS" width={100} />
+					<div className="percent">80%</div>
+					<Title>NextJS</Title>
+				</div>
+			</div>
+
+			<div className="wrapper">
+				<div className="item">
+					<Image
+						className="image"
+						src={IconTailwind}
+						alt="TailwindCSS"
+						width={100}
+					/>
+					<div className="percent">80%</div>
+					<Title>TailwindCSS</Title>
 				</div>
 			</div>
 
@@ -85,27 +121,6 @@ export default function Carousel() {
 					/>
 					<div className="percent">90%</div>
 					<Title>Styled Components</Title>
-				</div>
-			</div>
-
-			<div className="wrapper">
-				<div className="item">
-					<Image className="image" src={IconNext} alt="NextJS" width={100} />
-					<div className="percent">70%</div>
-					<Title>NextJS</Title>
-				</div>
-			</div>
-
-			<div className="wrapper">
-				<div className="item">
-					<Image
-						className="image"
-						src={IconTailwind}
-						alt="TailwindCSS"
-						width={100}
-					/>
-					<div className="percent">70%</div>
-					<Title>TailwindCSS</Title>
 				</div>
 			</div>
 		</Container>
