@@ -1,9 +1,6 @@
 import { globalStyles } from "@/styles/global";
 import type { AppProps } from "next/app";
 
-import logoImg from "../assets/raposa.png";
-import Image from "next/image";
-
 import { Container, Header, Main } from "@/styles/pages/app";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
