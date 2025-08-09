@@ -62,8 +62,7 @@ export default function Experience() {
 							reports.
 						</p>
 						<p>
-							• Worked with modern technologies such as Next.js, Vite, and
-							Tailwind CSS.
+							• Worked with modern technologies such as Next.js, Tailwind CSS, Vitest.
 						</p>
 						<p>
 							• Collaborated in Agile teams with continuous delivery, code
